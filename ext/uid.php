@@ -21,7 +21,7 @@
 		$rurlfull = $rurl . $uid;
 		$opt=array('http'=>array('header'=>"Referer: https://live.bilibili.com")); 
         $context=stream_context_create($opt);
-        ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727;http://www.9qc.com)');
+        ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
         $rjson_string = @file_get_contents($rurlfull,false, $context);
         $rdata = json_decode($rjson_string, true);
 		$cid = $rdata['data']['roomid'];
@@ -31,7 +31,7 @@
         $lurla = "https://api.live.bilibili.com/room/v1/Room/playUrl?cid=";
         $lurlb = "&qn=0&platform=web";
         $lurlfull = $lurla . $cid . $lurlb;
-        ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727;http://www.9qc.com)');
+        ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
         $ljson_string = @file_get_contents($lurlfull,false, $context);
         $ldata = json_decode($ljson_string, true);
 		}
