@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>哔哩哔哩直播链接获取 幻时博客</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+<h1>B站直播播放流在线获取</h1>
+<p class="lead">在线通过房间号或用户UID获取直播间的播放流，可在PotPlay，VLC等支持在线FLV播放的播放器中直接播放</p>
+<p class="lead">数据来源于Bilibili官方API</p>
+
+<div>
+    <form class="bs-example bs-example-form" role="form" action="ext/cid.php" method="get">
+        <div class="input-group">
+			<h3>房间号获取方式</h3>
+                <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" class="form-control" name="cid" placeholder="房间号">
+                <h3 />
+				<input class="btn btn-primary" type="submit" value="提交">
+        </div><!-- /input-group -->
+    </form>
+</div>
+
+<div>
+    <form class="bs-example bs-example-form" role="form" action="ext/uid.php" method="get">
+        <div class="input-group">
+			<h3>UID获取方式</h3>
+                <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" class="form-control" name="uid" placeholder="UID">
+                <h3 />
+				<input class="btn btn-primary" type="submit" value="提交">
+        </div><!-- /input-group -->
+    </form>
+</div>
+<br />
+<p class="lead">更新日志：</p>
+<p class="lead">2020-03-04 增加H5在线播放</p>
+<p class="lead">2020-02-22 第一版</p>
+<p class="lead">感谢：<a href="https://github.com/Chimeejs/chimee-player">Chimee H5播放器</a>     <a href="https://getbootstrap.com/">BootStrap 网页框架</a></p>
+<h6><a href="https://www.dxmc.net">版权所有© 2010-2020 幻时博客</a></h6>
+</center>
+</body>
+</html>
