@@ -13,11 +13,20 @@
 
 ## 更新日志
 
-2020-12-29 增加模拟Referer和user-agent来从B站API获取信息，防止被API拒绝连接
+### 2020-12-29
 
-2020-03-04 增加H5在线播放
+增加模拟Referer和user-agent来从B站API获取信息，防止被API拒绝连接  
+目前模拟的Referer是https://live.bilibili.com  
+user-agent是'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
+可以根据自己情况修改  
 
-2020-02-22 第一版
+### 2020-03-04
+
+增加H5在线播放
+
+### 2020-02-22
+
+第一版
 
 ## 关于
 
